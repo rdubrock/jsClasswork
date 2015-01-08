@@ -1,0 +1,18 @@
+
+
+// var each = function (array, callback) {
+// 	array.forEach (function(v, i) {
+// 		array[i] = callBack (array[i]);
+// 	});
+
+// 	return array;
+// };
+
+module.exports.each = function (array, callback) {
+	//accepts an array and adds one to each item
+	array.forEach (function(v, i) {
+		array[i] = callback (array[i]);
+	});
+
+	return array;
+};
