@@ -30,11 +30,14 @@ module.exports = {
 
 
 	setTimeout(callBack, milliseconds)
+	
 	//takes number
 	  //if
 
 	}
+
 };
+
 
 // setTimer = function(number, units, finishingfunction) {
 // 	var milliseconds = "";
