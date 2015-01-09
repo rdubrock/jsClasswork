@@ -14,8 +14,8 @@ module.exports = {
 		console.log ('you got it back out of the oven!');
 	},
 
-	setTimer : function (number, units) {
-	var milliseconds = '';
+	setTimer : function (number, units, callBack) {
+	var milliseconds = null;
 	if (units === "hours") {
 		milliseconds = number * 3600000;
 	} else if (units === "minutes") {
@@ -29,9 +29,10 @@ module.exports = {
 	};
 
 
-	setTimeout(console.log('timer done!'), milliseconds)
+	setTimeout(callBack, milliseconds)
 	//takes number
 	  //if
+
 	}
 };
 

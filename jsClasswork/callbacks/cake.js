@@ -28,12 +28,14 @@ var decorate = function () {
 }
 var cake = pour(pan, batter);
 var frosting = null;
-
+var restofCake = function () {
+ oven.removeItem(cake);
+ frosting =  mix(['sugar', 'butter', 'cocoa powder']);
+ decorate(cake);
+}
 
 // bake the cake
 oven.addItem(cake);
-oven.setTimer(10, 'seconds');
-oven.removeItem(cake);
+oven.setTimer(5, 'seconds', restofCake);
+
 // frost the cake
-frosting =  mix(['sugar', 'butter', 'cocoa powder']);
-decorate(cake);
