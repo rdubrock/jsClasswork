@@ -32,7 +32,7 @@ var frosting = null;
 
 // bake the cake
 oven.addItem(cake);
-oven.setTimer(30);
+oven.setTimer(10, 'seconds');
 oven.removeItem(cake);
 // frost the cake
 frosting =  mix(['sugar', 'butter', 'cocoa powder']);
