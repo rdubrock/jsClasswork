@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var message = require ('./message.json')
+
+var readline = require('readline');
+
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("Ask for a 'message', 'compliment', or insult': ", function(answer) {
+  
+  console.log(message[answer]);
+
+  rl.close();
+});
