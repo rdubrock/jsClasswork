@@ -17,5 +17,7 @@
     "jshint": "^2.4.4",
     "chai": "^1.9.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jsi-gamelib": "file:../../../../../var/folders/x8/zt3z4w1s7pl_3cw_pqf4wx5r0000gn/T/npm-2016-2e1c055b/1421095231858-0.807844856986776/7efdb96291c389c1b9cf2f8762ebee14614e4130"
+  }
 }
