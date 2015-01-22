@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script>
+
+var request = new XMLHttpRequest();
+request.onload = function() {
+    console.log(this.responseText);
+};
+request.open("get", "https://raw.githubusercontent.com/portlandcodeschool/jsi-gamelib/master/package.json");
+
+</script>
+</body>
+</html>

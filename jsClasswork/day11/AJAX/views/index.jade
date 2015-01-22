@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 HUZZAH
+  p Welcome to #{title}
+  script. 
+    var request = new XMLHttpRequest();
+    request.onload = function() {
+      var answer = this.response;
+      var object = JSON.parse(answer);
+      var name = document.createElement('h1');
+      name.textContent = object['name'];
+
+      var newPara = document.getElementsByTagName('body');
+      newPara[0].appendChild(name);
+    };
+    request.open("get", "http://localhost:3000/example.json");
+    request.send();
+
